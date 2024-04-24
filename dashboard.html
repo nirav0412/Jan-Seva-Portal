@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+        <div style="margin-bottom: -9px;">
+        <a href="#"><img style="height: 23px;width:29px;margin-right: 29px;margin-left: -2px;" src="acclogo.png" alt=""><span><span  style="margin-top: 0px;" class="icon-text">Account</a></span><br>
+        </div>
+        <div style="margin-bottom: -9px;">
+          <a href="#"><img style="height: 23px;width:29px;margin-right: 29px;margin-left: -2px;" src="acclogo.png" alt=""><span><span  style="margin-top: 0px;" class="icon-text">Schema</a></span><br>
+          </div>
+          <div style="margin-bottom: -9px;">
+            <a href="#"><img style="height: 23px;width:29px;margin-right: 29px;margin-left: -2px;" src="acclogo.png" alt=""><span><span  style="margin-top: 0px;" class="icon-text">Account Info</a></span><br>
+            </div>
+            <div style="margin-bottom: -9px;">
+              <a href="#"><img style="height: 23px;width:29px;margin-right: 29px;margin-left: -2px;" src="acclogo.png" alt=""><span><span  style="margin-top: 0px;" class="icon-text">Contact Us</a></span><br>
+              </div>
+      </div>
+      
+      <div id="main" class="main"  >
+        <h2>GUJARAT STATE COMMISON FOR UNRESERVED CLASS</h2>
+        <form action="" name="myform">
+          <div class="selschema">
+              <p style="font-size: 20px;" id="f1">Schema Type:
+                *<select name="schema_type" id="schema_type" required>
+                    <option value="">--Select Schema Type--</option>
+                    <option value="Schema10">Schema After 10th</option>
+                    <option value="Loan Schema">Loan Schema</option>
+                    <option value="Schema After 12th">Schema After 12th</option>
+                </select>
+              </p>  
+            <input type="submit" value="SUBMIT" name="submit" id="submit" class="subm" onclick="check(); return false">
+          </div>
+      </form>
+      <div class="container">
+        <form action="">
+            <h1 class="mainheading">Payment Form</h1><hr>
+            <p>Required Fields are followed by * </p>
+            <h2>Contact Information</h2>
+            <p>Name: *<input type="text" name="name" placeholder="Nirav Ashvinbhai Patel" required></p>
+            <fieldset> 
+                <legend>Gender *</legend>
+                <p>
+                    Male <input type="radio" name="gender" id="Male" required>
+                    Female <input type="radio" name="gender" id="Female" required>
+                </p>
+            </fieldset> 
+            <p>Adress: <textarea name="adress" id="adress" cols="100" placeholder="Enter your address" rows="5"></textarea></p>
+            <p>Email: *<input type="email" name="email" id="email" placeholder="xyz@gmail.com" required></p>
+            <p>Pincode: *<input type="number" name="pincode" id="pincode" placeholder="123456" required></p>
+            <h2>Payment Information</h2>
+            <p>Card Type:
+                *<select name="card_type" id="card_type" required>
+                    <option value="">--Select Card Type--</option>
+                    <option value="Rupay">Rupay</option>
+                    <option value="Visa">Visa</option>
+                    <option value="MasterCard">MasterCard</option>
+                </select>
+            </p>
+            <p>Card Number:
+                *<input type="number" name="Cardnumber" id="cardnumber" placeholder="1234 5678 9000" required>
+            </p>
+            <p>
+                Expiration Date: *<input type="date" name="exp_date" id="exp_date" required>
+            </p>
+            <p>
+                CVV: *<input type="password" name="cvv" id="cvv" placeholder="123" required>
+            </p>
+            <input type="submit" value="Pay Now" name="Pay now" id="Pay Now" class="subm">
+        </form>
+    </div>
+      </div>
+      
+</body>
+<script src="dash.js"></script>
+</html>
